@@ -12,7 +12,7 @@ public class ItemsAdapter {
 	public void initializeInventory() throws FileNotFoundException, IOException, CsvValidationException {
 		Inventory inventory = Inventory.getInstance();
 		try (CSVReader csvReader = new CSVReader(new FileReader(
-				"C:\\Users\\Siddharth Sircar\\eclipse-workspace\\MarketPlaceIndividualProject\\resources\\SampleFiles\\Dataset - Sheet1.csv"));) {
+				System.getProperty("user.dir") + ConfigReader.INPUT_DIR+ "Dataset - Sheet1.csv"));) {
 			String[] values = null;
 			csvReader.readNext();
 			while ((values = csvReader.readNext()) != null) {
