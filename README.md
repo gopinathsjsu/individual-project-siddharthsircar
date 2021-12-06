@@ -15,6 +15,8 @@ OR
 1. Update the config.properties with the input file name
 2. Run the individualprojectjar file from the root folder
 
+Card Sheet is maintained in src/main/resources/SampleFiles
+
 # Design Pattern Used
 The following design patterns have been used:
 1. Decorator Pattern: To validate the order (Insufficient Qty / Crossing the category cap)
